@@ -321,7 +321,7 @@ button:hover,
 .img-responsive { 
     width: 100%;
     height:100%;
-     }
+}
 
 .breadcrumb-holder {
     padding: 12px 17px 12px 0;
@@ -1541,6 +1541,7 @@ span.portfolio-hover {
 
 .portfolio-image-holder {
     position: relative;
+    padding:25px;
 }
 
 .portfolio-image-holder:before {
