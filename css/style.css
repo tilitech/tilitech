@@ -1544,7 +1544,7 @@ span.portfolio-hover {
 }
 
 .portfolio-image-holder:before {
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    border: none;
     content: "";
     position: absolute;
     top: 12px;
