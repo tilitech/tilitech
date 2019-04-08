@@ -276,6 +276,15 @@ button:hover,
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+.h-img{
+	height: 55px;
+}
+.h-img-h{
+	height: 55px;
+	margin-top: 4px;
+	margin-left: 22px;
+}
+
 .section-title-nocap {
     margin-bottom: 0;
 }
@@ -1766,6 +1775,37 @@ span.portfolio-hover a {
 	padding: 0 20px 0 100px;
 	position: relative;
 	text-align: left;
+}
+
+.ticker{
+margin-top: 20px;
+}
+
+.width-sixty{
+	width: 60%;
+}
+. width-seventy-five{
+	width:75%
+}
+
+.width-fifty-seven{
+	width: 57%;
+}
+
+.width-ninty{
+	width: 90%;
+}
+
+.wid-thirty{
+	width: 30%;
+}
+
+.wid-twenty{
+	width: 20%;
+}
+
+.wid-sevnty{
+	width: 70%;
 }
 
 .timeline > li .timeline-panel:before {
