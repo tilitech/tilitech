@@ -766,7 +766,7 @@
                             </div>
                             <!-- /.column -->
                             <div class="col-sm-6 text-right">
-                                <button onclick="send()" id="submit" class="btn btn-default btn-lg">Send</button>
+                                <button onclick="sendFun()" id="submit" class="btn btn-default btn-lg">Send</button>
                             </div>
                             <!-- /.column -->
                         </div>
@@ -834,7 +834,8 @@
             $('.timer').countTo({ speed: 3000 });
         }
     });
-    send(){
+    sendFun(){
+    	alert("in")
 	    var email = document.getElementById('email').value;
 	    var msg = document.getElementById('message').value;
 	    var name = document.getElementById('name').value;
