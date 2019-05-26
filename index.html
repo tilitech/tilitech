@@ -821,6 +821,12 @@
     <script type="text/javascript" src="js/form-validator.min.js"></script>
     <script type="text/javascript" src="js/jquery.inview.min.js"></script>
     <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/style-switcher.js"></script>
+    <!-- Remove for production -->
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
     /* ---- Counter (our count) ---- */
     $('#ourcount').one('inview', function(event, isInView) {
@@ -828,12 +834,21 @@
             $('.timer').countTo({ speed: 3000 });
         }
     });
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('message').value;
+    var name = document.getElementById('name').value;
+    Email.send({
+    Host : "smtpout.asia.secureserver.net",
+    Username : "info@tilitech.com",
+    Password : "9785997277@v",
+    To : 'info@tilitech.com',
+    From : email,
+    Subject : name,
+    Body : msg
+}).then(
+  message => alert(message)
+);
     </script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
-    <script type="text/javascript" src="js/style-switcher.js"></script>
-    <!-- Remove for production -->
-    <script type="text/javascript" src="js/main.js"></script>
 </body>
 <!-- Mirrored from aliensix.com/particles-1.4/HTML/index-text-rotater.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Dec 2017 07:30:02 GMT -->
 
